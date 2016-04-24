@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>ТВ программа</title>
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <input id="burger" type="checkbox" name="burger">
+    <label for="burger" class="burger__label"></label>
+    <nav id="menu">
+      <header>
+        <h2>Телеканалы</h2>
+        <nav role="navigation"></nav>
+        <ul class="listv">
+          <li class="listv__channel"><a href="index.html"><span class="listv__channel__logo"><span class="listv__channel__logo--1tv"></span><span class="listv__channel--title">Первый</span></span></a></li>
+          <li class="listv__channel"><a href="rentv.html">
+              <div class="listv__channel__logo"><span class="listv__channel__logo--rentv"></span><span class="listv__channel--title">РЕН ТВ</span></div></a></li>
+          <li class="listv__channel"><a href="dom.html"><span class="listv__channel__logo"><span class="listv__channel__logo--domtv"></span><span class="listv__channel--title">Домашний</span></span></a></li>
+          <li class="listv__channel"><a href="match.html"><span class="listv__channel__logo"><span class="listv__channel__logo--match"></span><span class="listv__channel--title">МАТЧ ТВ</span></span></a></li>
+          <li class="listv__channel"><a href="ntv.html"><span class="listv__channel__logo"><span class="listv__channel__logo--ntv"></span><span class="listv__channel--title">НТВ</span></span></a></li>
+        </ul>
+      </header>
+    </nav>
+    <main id="panel">
+      <header>
+        <div class="title">
+          <h2><span>: </span>Телепрограмма<span id="live" class="title_live"> live!</span></h2>
+        </div>
+        <div class="filter__genre">
+          <div class="checkbox checkbox--film">
+            <label class="checkbox__label">
+              <input name="film" value="film" type="checkbox" class="checkbox__input checkbox__input--film"><span class="checkbox__field checkbox__field--blue"></span>
+            </label>
+            <div class="checkbox__inner"><span class="checkbox__text">Фильмы</span></div>
+          </div>
+          <div class="checkbox checkbox--serial">
+            <label class="checkbox__label">
+              <input name="genre" value="serial" type="checkbox" class="checkbox__input checkbox__input--serial"><span class="checkbox__field checkbox__field--red"></span>
+            </label>
+            <div class="checkbox__inner"><span class="checkbox__text">Сериалы</span></div>
+          </div>
+          <div class="checkbox checkbox--sport">
+            <label class="checkbox__label">
+              <input name="genre" value="sport" type="checkbox" class="checkbox__input checkbox__input--sport"><span class="checkbox__field checkbox__field--green"></span>
+            </label>
+            <div class="checkbox__inner"><span class="checkbox__text">Спорт</span></div>
+          </div>
+        </div>
+      </header>
+      <section id="wrapper">
+        <section id="schedule" style="background: undefined;">
+          <input id="weeks_nav1" type="radio" name="tabs" checked="">
+          <label for="weeks_nav1" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">пн</div>
+            <div class="weeks_nav__item__day">18</div>
+          </label>
+          <input id="weeks_nav2" type="radio" name="tabs">
+          <label for="weeks_nav2" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">вт</div>
+            <div class="weeks_nav__item__day">19</div>
+          </label>
+          <input id="weeks_nav3" type="radio" name="tabs">
+          <label for="weeks_nav3" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">ср</div>
+            <div class="weeks_nav__item__day">20</div>
+          </label>
+          <input id="weeks_nav4" type="radio" name="tabs">
+          <label for="weeks_nav4" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">чт</div>
+            <div class="weeks_nav__item__day">21</div>
+          </label>
+          <input id="weeks_nav5" type="radio" name="tabs">
+          <label for="weeks_nav5" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">пт</div>
+            <div class="weeks_nav__item__day">22</div>
+          </label>
+          <input id="weeks_nav6" type="radio" name="tabs">
+          <label for="weeks_nav6" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">сб</div>
+            <div class="weeks_nav__item__day">23</div>
+          </label>
+          <input id="weeks_nav7" type="radio" name="tabs">
+          <label for="weeks_nav7" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">вск</div>
+            <div class="weeks_nav__item__day">24</div>
+          </label>
+        </section>
+      </section>
+    </main>
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/script.js"></script>
+  </body>
+</html>

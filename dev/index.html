@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ТВ программа</title>
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav id="menu">
+        <header>
+            <h2>Телеканалы</h2>
+            <nav role="navigation">
+            </nav>
+            <ul class="listv">
+                <li class="listv__channel">
+                    <div class="listv__channel__logo">
+                        <span class="listv__channel__logo--1tv"></span>
+                    </div>
+                    <div class="listv__channel--title">Первый</div>
+                </li>
+                <li class="listv__channel">
+                    <div class="listv__channel__logo">
+                        <span class="listv__channel__logo--rentv"></span>
+                    </div>
+                    <div class="listv__channel--title">РЕН ТВ</div>
+                </li>
+                <li class="listv__channel">
+                    <div class="listv__channel__logo">
+                        <span class="listv__channel__logo--domtv"></span>
+                    </div>
+                    <div class="listv__channel--title">Домашний</div>
+                </li>
+                <li class="listv__channel">
+                    <div class="listv__channel__logo">
+                        <span class="listv__channel__logo--chetv"></span>
+                    </div>
+                    <div class="listv__channel--title">ЧЕ</div>
+                </li>
+                <li class="listv__channel">
+                    <div class="listv__channel__logo">
+                        <span class="listv__channel__logo--ntv"></span>
+                    </div>
+                    <div class="listv__channel--title">НТВ</div>
+                </li>
+            </ul>
+        </header>
+    </nav>
+    <main id="panel">
+        <header>
+            <div class="title">
+                <h2><span>Первый: </span>Телепрограмма</h2>
+            </div>
+            <div class="filter__genre">
+                <div class="checkbox checkbox--film">
+                    <label class="checkbox__label">
+                        <input name="genre" value="138" type="checkbox" class="checkbox__input checkbox__input--film">
+                        <span class="checkbox__field checkbox__field--blue">
+					</span>
+                    </label>
+                    <div class="checkbox__inner">
+                        <span class="checkbox__text">Фильмы</span>
+                    </div>
+                </div>
+                <div class="checkbox checkbox--serial">
+                    <label class="checkbox__label">
+                        <input name="genre" value="138" type="checkbox" class="checkbox__input checkbox__input--serial">
+                        <span class="checkbox__field checkbox__field--red">
+					</span>
+                    </label>
+                    <div class="checkbox__inner">
+                        <span class="checkbox__inner--text">Сериалы</span>
+                    </div>
+                </div>
+                <div class="checkbox checkbox--sport">
+                    <label class="checkbox__label">
+                        <input name="genre" value="138" type="checkbox" class="checkbox__input checkbox__input--sport">
+                        <span class="checkbox__field checkbox__field--green">
+					</span>
+                    </label>
+                    <div class="checkbox__inner">
+                        <span class="checkbox__text">Спорт</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="wrapper">
+            <nav class="weeks_nav">
+                <input type="radio" name="tabs" id="weeks_nav--1" checked="">
+                <label class="weeks_nav__item" for="weeks_nav--1">
+                    <div class="weeks_nav__item__name">
+                        пн
+                    </div>
+                    <div class="weeks_nav__item__day">
+                        18 </div>
+                </label>
+                <input type="radio" name="tabs" id="weeks_nav--2" checked="">
+                <label class="weeks_nav__item" for="weeks_nav--2">
+                    <div class="weeks_nav__item__name">
+                        вт
+                    </div>
+                    <div class="weeks_nav__item__day">
+                        19 </div>
+                </label>
+                <input type="radio" name="tabs" id="weeks_nav--3" checked="">
+                <label class="weeks_nav__item" for="weeks_nav--3">
+                    <div class="weeks_nav__item__name">
+                        ср
+                    </div>
+                    <div class="weeks_nav__item__day">
+                        20 </div>
+                </label>
+                <input type="radio" name="tabs" id="weeks_nav--4" checked="">
+                <label class="weeks_nav__item" for="weeks_nav--4">
+                    <div class="weeks_nav__item__name">
+                        чт
+                    </div>
+                    <div class="weeks_nav__item__day">
+                        21 </div>
+                </label>
+                <input type="radio" name="tabs" id="weeks_nav--5" checked="">
+                <label class="weeks_nav__item" for="weeks_nav--5">
+                    <div class="weeks_nav__item__name">
+                        пт
+                    </div>
+                    <div class="weeks_nav__item__day">
+                        22 </div>
+                </label>
+                <input type="radio" name="tabs" id="weeks_nav--6" checked="">
+                <label class="weeks_nav__item" for="weeks_nav--6">
+                    <div class="weeks_nav__item__name">
+                        сб
+                    </div>
+                    <div class="weeks_nav__item__day">
+                        23 </div>
+                </label>
+                <input type="radio" name="tabs" id="weeks_nav--7" checked="">
+                <label class="weeks_nav__item" for="weeks_nav--7">
+                    <div class="weeks_nav__item__name">
+                        вск
+                    </div>
+                    <div class="weeks_nav__item__day">
+                        24 </div>
+                </label>
+            </nav>
+            <section id="schedule">
+                <div class="schedule_item ">
+                    <div class="schedule_item__date">
+                        <div class="schedule_item__date__h">
+                            06 </div>
+                        <div class="schedule_item__date__m">
+                            00 </div>
+                    </div>
+                    <div class="schedule_item__info">
+                        <a href="/teleshow/experiment/" class="schedule_item__info__name">	Вечернее шоу Здесь и сейчас</a>
+                        <div class="schedule_item__info__label">12+</div>
+                    </div>
+                </div>
+                <div class="schedule_item ">
+                    <div class="schedule_item__date">
+                        <div class="schedule_item__date__h">
+                            10 </div>
+                        <div class="schedule_item__date__m">
+                            00 </div>
+                    </div>
+                    <div class="schedule_item__info">
+                        <a href="/teleshow/money/" class="schedule_item__info__name">Деньги</a>
+                        <div class="schedule_item__info__label">16+</div>
+                        <div class="relation relation--schedule">
+                            <div class="relation__type">Ведущие</div>
+                            <div class="relation__items">
+                                <a class="relation__item" href="/people/vjacheslav_shirjaev-275428/">Вячеслав Ширяев</a>, <a class="relation__item" href="/people/natalja_shanetskaja-275429/">Наталья Шанецкая</a>, <a class="relation__item" href="/people/lev_parhomenko-212019/">Лев Пархоменко</a>, <a class="relation__item" href="/people/artem_torchinskij-275467/">Артём Торчинский</a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule_item ">
+                    <div class="schedule_item__date">
+                        <div class="schedule_item__date__h">
+                            06 </div>
+                        <div class="schedule_item__date__m">
+                            00 </div>
+                    </div>
+                    <div class="schedule_item__info">
+                        <a href="/teleshow/experiment/" class="schedule_item__info__name">	Вечернее шоу Здесь и сейчас</a>
+                        <div class="schedule_item__info__label">12+</div>
+                    </div>
+                </div>
+                <div class="schedule_item ">
+                    <div class="schedule_item__date">
+                        <div class="schedule_item__date__h">
+                            10 </div>
+                        <div class="schedule_item__date__m">
+                            00 </div>
+                    </div>
+                    <div class="schedule_item__info">
+                        <a href="/teleshow/money/" class="schedule_item__info__name">Деньги</a>
+                        <div class="schedule_item__info__label">16+</div>
+                        <div class="relation relation--schedule">
+                            <div class="relation__type">Ведущие</div>
+                            <div class="relation__items">
+                                <a class="relation__item" href="/people/vjacheslav_shirjaev-275428/">Вячеслав Ширяев</a>, <a class="relation__item" href="/people/natalja_shanetskaja-275429/">Наталья Шанецкая</a>, <a class="relation__item" href="/people/lev_parhomenko-212019/">Лев Пархоменко</a>, <a class="relation__item" href="/people/artem_torchinskij-275467/">Артём Торчинский</a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule_item ">
+                    <div class="schedule_item__date">
+                        <div class="schedule_item__date__h">
+                            06 </div>
+                        <div class="schedule_item__date__m">
+                            00 </div>
+                    </div>
+                    <div class="schedule_item__info">
+                        <a href="/teleshow/experiment/" class="schedule_item__info__name">	Вечернее шоу Здесь и сейчас</a>
+                        <div class="schedule_item__info__label">12+</div>
+                    </div>
+                </div>
+                <div class="schedule_item ">
+                    <div class="schedule_item__date">
+                        <div class="schedule_item__date__h">
+                            10 </div>
+                        <div class="schedule_item__date__m">
+                            00 </div>
+                    </div>
+                    <div class="schedule_item__info">
+                        <a href="/teleshow/money/" class="schedule_item__info__name">Деньги</a>
+                        <div class="schedule_item__info__label">16+</div>
+                        <div class="relation relation--schedule">
+                            <div class="relation__type">Ведущие</div>
+                            <div class="relation__items">
+                                <a class="relation__item" href="/people/vjacheslav_shirjaev-275428/">Вячеслав Ширяев</a>, <a class="relation__item" href="/people/natalja_shanetskaja-275429/">Наталья Шанецкая</a>, <a class="relation__item" href="/people/lev_parhomenko-212019/">Лев Пархоменко</a>, <a class="relation__item" href="/people/artem_torchinskij-275467/">Артём Торчинский</a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule_item ">
+                    <div class="schedule_item__date">
+                        <div class="schedule_item__date__h">
+                            06 </div>
+                        <div class="schedule_item__date__m">
+                            00 </div>
+                    </div>
+                    <div class="schedule_item__info">
+                        <a href="/teleshow/experiment/" class="schedule_item__info__name">	Вечернее шоу Здесь и сейчас</a>
+                        <div class="schedule_item__info__label">12+</div>
+                    </div>
+                </div>
+                <div class="schedule_item ">
+                    <div class="schedule_item__date">
+                        <div class="schedule_item__date__h">
+                            10 </div>
+                        <div class="schedule_item__date__m">
+                            00 </div>
+                    </div>
+                    <div class="schedule_item__info">
+                        <a href="/teleshow/money/" class="schedule_item__info__name">Деньги</a>
+                        <div class="schedule_item__info__label">16+</div>
+                        <div class="relation relation--schedule">
+                            <div class="relation__type">Ведущие</div>
+                            <div class="relation__items">
+                                <a class="relation__item" href="/people/vjacheslav_shirjaev-275428/">Вячеслав Ширяев</a>, <a class="relation__item" href="/people/natalja_shanetskaja-275429/">Наталья Шанецкая</a>, <a class="relation__item" href="/people/lev_parhomenko-212019/">Лев Пархоменко</a>, <a class="relation__item" href="/people/artem_torchinskij-275467/">Артём Торчинский</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <link rel="stylesheet" href="css/all.css">
+</body>
+
+</html>

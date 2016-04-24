@@ -1,0 +1,80 @@
+$side: 180px;
+$color_g: #192e3c;
+$color_b: #1986e0;
+$fontsize: 22px;
+$pad: 0 1rem;
+// Для мобильников
+@media (max-width: 44em) {
+    html,
+    body {
+        font-size: 16px;
+    }
+    #wrapper {
+        padding: 0;
+    }
+    #menu {
+       transform: translateX(-$side);
+    }
+    #panel {
+        margin-left: 0;
+        .title {
+            display: block;
+            text-align: left;
+            padding: 8px;
+        }
+        .filter__genre {
+            display: block;
+            text-align: left;
+            padding: 8px;
+            height: initial;
+        }
+        header {
+            background: $color_g;
+            color: #fff;
+            line-height: 1;
+            padding: $pad 0 4rem;
+        }
+        .title_live {
+            display: none;
+        }
+    }
+    body {
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .checkbox {
+        margin-right: 2px;
+        &__field {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+    #schedule {
+        .schedule_item {
+            padding: 1rem 2rem;
+        }
+        .schedule_item__date {
+            width: 4rem;
+        }
+    }
+    #burger {
+        display: none;
+        &:checked {
+            & ~ #menu {
+                transform: translateX(0);
+                z-index: 2000;
+            }
+            & ~ #panel {
+                transform: translateX($side);
+                overflow: hidden;
+                width: 100%;
+            }
+            & ~ .burger__label {
+                transform: translateX($side);
+                z-index: 2000;
+                cursor: pointer;
+                height: 2rem;
+            }
+        }
+    }
+}

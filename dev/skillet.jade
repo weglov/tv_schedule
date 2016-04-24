@@ -1,0 +1,38 @@
+doctype html
+//- Миксин
+mixin schedule_item(item)
+      .schedule_item(data-type=item.type)
+                  .schedule_item__date(data-time=item.time)= item.time
+                  .schedule_item__info
+                    .schedule_item__info__name= item.name
+                    if item.label
+                      .schedule_item__info__label= item.label
+                    else 
+                      .schedule_item__info__label 4+
+                  .schedule_item__tooltip
+                        img.tooltip__image(src='https://placeimg.com/300/150/any?'+item.time)
+                        .tooltip__title=item.name
+//- html
+html(lang='ru')
+  include ./include/head.jade
+  body
+    input#burger(type='checkbox', name='burger')
+    label.burger__label(for='burger')
+    nav#menu
+      include ./include/side.jade
+    main#panel
+      header
+        include ./include/header.jade
+        include ./include/filter.jade
+      section#wrapper
+        section#schedule(style='background: #{color};')
+          include ./include/week.jade
+          //- цикл миксина расписания на неделю
+          if schedule    
+            -var index = 1
+            each val in schedule
+              .schedule__day(id="day#{index++}")
+                for item in val
+                    +schedule_item(item)
+    link(rel='stylesheet', href='css/all.css')
+    script(src="js/script.js")

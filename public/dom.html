@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>ТВ программа</title>
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <input id="burger" type="checkbox" name="burger">
+    <label for="burger" class="burger__label"></label>
+    <nav id="menu">
+      <header>
+        <h2>Телеканалы</h2>
+        <nav role="navigation"></nav>
+        <ul class="listv">
+          <li class="listv__channel"><a href="index.html"><span class="listv__channel__logo"><span class="listv__channel__logo--1tv"></span><span class="listv__channel--title">Первый</span></span></a></li>
+          <li class="listv__channel"><a href="rentv.html">
+              <div class="listv__channel__logo"><span class="listv__channel__logo--rentv"></span><span class="listv__channel--title">РЕН ТВ</span></div></a></li>
+          <li class="listv__channel"><a href="dom.html"><span class="listv__channel__logo"><span class="listv__channel__logo--domtv"></span><span class="listv__channel--title">Домашний</span></span></a></li>
+          <li class="listv__channel"><a href="match.html"><span class="listv__channel__logo"><span class="listv__channel__logo--match"></span><span class="listv__channel--title">МАТЧ ТВ</span></span></a></li>
+          <li class="listv__channel"><a href="ntv.html"><span class="listv__channel__logo"><span class="listv__channel__logo--ntv"></span><span class="listv__channel--title">НТВ</span></span></a></li>
+        </ul>
+      </header>
+    </nav>
+    <main id="panel">
+      <header>
+        <div class="title">
+          <h2><span>Домашний: </span>Телепрограмма<span id="live" class="title_live"> live!</span></h2>
+        </div>
+        <div class="filter__genre">
+          <div class="checkbox checkbox--film">
+            <label class="checkbox__label">
+              <input name="film" value="film" type="checkbox" class="checkbox__input checkbox__input--film"><span class="checkbox__field checkbox__field--blue"></span>
+            </label>
+            <div class="checkbox__inner"><span class="checkbox__text">Фильмы</span></div>
+          </div>
+          <div class="checkbox checkbox--serial">
+            <label class="checkbox__label">
+              <input name="genre" value="serial" type="checkbox" class="checkbox__input checkbox__input--serial"><span class="checkbox__field checkbox__field--red"></span>
+            </label>
+            <div class="checkbox__inner"><span class="checkbox__text">Сериалы</span></div>
+          </div>
+          <div class="checkbox checkbox--sport">
+            <label class="checkbox__label">
+              <input name="genre" value="sport" type="checkbox" class="checkbox__input checkbox__input--sport"><span class="checkbox__field checkbox__field--green"></span>
+            </label>
+            <div class="checkbox__inner"><span class="checkbox__text">Спорт</span></div>
+          </div>
+        </div>
+      </header>
+      <section id="wrapper">
+        <section id="schedule" style="background: #CA1B52;">
+          <input id="weeks_nav1" type="radio" name="tabs" checked="">
+          <label for="weeks_nav1" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">пн</div>
+            <div class="weeks_nav__item__day">18</div>
+          </label>
+          <input id="weeks_nav2" type="radio" name="tabs">
+          <label for="weeks_nav2" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">вт</div>
+            <div class="weeks_nav__item__day">19</div>
+          </label>
+          <input id="weeks_nav3" type="radio" name="tabs">
+          <label for="weeks_nav3" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">ср</div>
+            <div class="weeks_nav__item__day">20</div>
+          </label>
+          <input id="weeks_nav4" type="radio" name="tabs">
+          <label for="weeks_nav4" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">чт</div>
+            <div class="weeks_nav__item__day">21</div>
+          </label>
+          <input id="weeks_nav5" type="radio" name="tabs">
+          <label for="weeks_nav5" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">пт</div>
+            <div class="weeks_nav__item__day">22</div>
+          </label>
+          <input id="weeks_nav6" type="radio" name="tabs">
+          <label for="weeks_nav6" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">сб</div>
+            <div class="weeks_nav__item__day">23</div>
+          </label>
+          <input id="weeks_nav7" type="radio" name="tabs">
+          <label for="weeks_nav7" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">вск</div>
+            <div class="weeks_nav__item__day">24</div>
+          </label>
+          <div id="day1" class="schedule__day">
+            <div data-type="serial" class="schedule_item">
+              <div data-time="02:25" class="schedule_item__date">02:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Нет запретных тем. 4-я - 6-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:25" class="tooltip__image">
+                <div class="tooltip__title">Нет запретных тем. 4-я - 6-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:25" class="schedule_item__date">05:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:25" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:30" class="schedule_item__date">05:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Джейми: обед за 15 минут. 3-я и 4-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:30" class="tooltip__image">
+                <div class="tooltip__title">Джейми: обед за 15 минут. 3-я и 4-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="06:30" class="schedule_item__date">06:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Джейми: обед за 15 минут. 5-я и 6-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?06:30" class="tooltip__image">
+                <div class="tooltip__title">Джейми: обед за 15 минут. 5-я и 6-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="07:30" class="schedule_item__date">07:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?07:30" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="07:50" class="schedule_item__date">07:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">По делам несовершеннолетних</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?07:50" class="tooltip__image">
+                <div class="tooltip__title">По делам несовершеннолетних</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:50" class="schedule_item__date">09:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Давай разведёмся!</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:50" class="tooltip__image">
+                <div class="tooltip__title">Давай разведёмся!</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="11:50" class="schedule_item__date">11:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Понять. Простить. 231-я и 232-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?11:50" class="tooltip__image">
+                <div class="tooltip__title">Понять. Простить. 231-я и 232-я серии</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="13:00" class="schedule_item__date">13:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Преступления страсти. Сезон 1. 1-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:00" class="tooltip__image">
+                <div class="tooltip__title">Преступления страсти. Сезон 1. 1-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="14:00" class="schedule_item__date">14:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта. 7-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?14:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта. 7-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="15:00" class="schedule_item__date">15:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта. 8-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта. 8-я серия</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="16:00" class="schedule_item__date">16:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Подкидыши. Фильм 4-й - &quot;Антон и Антошка&quot;, 1-я и 2-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?16:00" class="tooltip__image">
+                <div class="tooltip__title">Подкидыши. Фильм 4-й - &quot;Антон и Антошка&quot;, 1-я и 2-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:00" class="schedule_item__date">18:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:00" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="18:05" class="schedule_item__date">18:05</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Она написала убийство. 79-я серия - &quot;Губительная роскошь</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:05" class="tooltip__image">
+                <div class="tooltip__title">Она написала убийство. 79-я серия - &quot;Губительная роскошь</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="19:00" class="schedule_item__date">19:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта-2. 1-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?19:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта-2. 1-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="20:00" class="schedule_item__date">20:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта-2. 2-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?20:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта-2. 2-я серия</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="21:00" class="schedule_item__date">21:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Подкидыши. Фильм 5-й - &quot;Мост&quot;, 1-я и 2-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:00" class="tooltip__image">
+                <div class="tooltip__title">Подкидыши. Фильм 5-й - &quot;Мост&quot;, 1-я и 2-я серии</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="23:00" class="schedule_item__date">23:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Я его убила</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?23:00" class="tooltip__image">
+                <div class="tooltip__title">Я его убила</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="00:00" class="schedule_item__date">00:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:00" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="00:30" class="schedule_item__date">00:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Дикая любовь</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:30" class="tooltip__image">
+                <div class="tooltip__title">Дикая любовь</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="02:50" class="schedule_item__date">02:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Нет запретных тем. 7-я и 8-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:50" class="tooltip__image">
+                <div class="tooltip__title">Нет запретных тем. 7-я и 8-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="04:50" class="schedule_item__date">04:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?04:50" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+          </div>
+          <div id="day2" class="schedule__day">
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:00" class="schedule_item__date">05:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Домашняя кухня</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:00" class="tooltip__image">
+                <div class="tooltip__title">Домашняя кухня</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:30" class="schedule_item__date">05:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Джейми: обед за 15 минут. 5-я и 6-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:30" class="tooltip__image">
+                <div class="tooltip__title">Джейми: обед за 15 минут. 5-я и 6-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="06:30" class="schedule_item__date">06:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Джейми: обед за 15 минут. 7-я и 8-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?06:30" class="tooltip__image">
+                <div class="tooltip__title">Джейми: обед за 15 минут. 7-я и 8-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="07:30" class="schedule_item__date">07:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?07:30" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="07:50" class="schedule_item__date">07:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">По делам несовершеннолетних</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?07:50" class="tooltip__image">
+                <div class="tooltip__title">По делам несовершеннолетних</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:50" class="schedule_item__date">09:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Давай разведёмся!</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:50" class="tooltip__image">
+                <div class="tooltip__title">Давай разведёмся!</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="11:50" class="schedule_item__date">11:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Понять. Простить. 233-я и 234-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?11:50" class="tooltip__image">
+                <div class="tooltip__title">Понять. Простить. 233-я и 234-я серии</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="13:00" class="schedule_item__date">13:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Преступления страсти. Сезон 1. 2-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:00" class="tooltip__image">
+                <div class="tooltip__title">Преступления страсти. Сезон 1. 2-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="14:00" class="schedule_item__date">14:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта-2. 1-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?14:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта-2. 1-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="15:00" class="schedule_item__date">15:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта-2. 2-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта-2. 2-я серия</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="16:00" class="schedule_item__date">16:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Подкидыши. Фильм 5-й - &quot;Мост&quot;, 1-я и 2-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?16:00" class="tooltip__image">
+                <div class="tooltip__title">Подкидыши. Фильм 5-й - &quot;Мост&quot;, 1-я и 2-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:00" class="schedule_item__date">18:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:00" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="18:05" class="schedule_item__date">18:05</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Она написала убийство. 80-я серия - &quot;Кто подсыпал веронал в суп миссис Флетчер?</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:05" class="tooltip__image">
+                <div class="tooltip__title">Она написала убийство. 80-я серия - &quot;Кто подсыпал веронал в суп миссис Флетчер?</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="19:00" class="schedule_item__date">19:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта-2. 3-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?19:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта-2. 3-я серия</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="20:00" class="schedule_item__date">20:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта-2. 4-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?20:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта-2. 4-я серия</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="21:00" class="schedule_item__date">21:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Подкидыши. Фильм 6-й - &quot;Принцесса цирка&quot;, 1-я и 2-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:00" class="tooltip__image">
+                <div class="tooltip__title">Подкидыши. Фильм 6-й - &quot;Принцесса цирка&quot;, 1-я и 2-я серии</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="23:00" class="schedule_item__date">23:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Я его убила</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?23:00" class="tooltip__image">
+                <div class="tooltip__title">Я его убила</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="00:00" class="schedule_item__date">00:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:00" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="00:30" class="schedule_item__date">00:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Отпуск за свой счет. 1-я и 2-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:30" class="tooltip__image">
+                <div class="tooltip__title">Отпуск за свой счет. 1-я и 2-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="01:45" class="schedule_item__date">01:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Профилактика на канале с 1:45 до 6:29</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?01:45" class="tooltip__image">
+                <div class="tooltip__title">Профилактика на канале с 1:45 до 6:29</div>
+              </div>
+            </div>
+          </div>
+          <div id="day3" class="schedule__day">
+            <div data-type="episode" class="schedule_item">
+              <div data-time="01:45" class="schedule_item__date">01:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Профилактика на канале с 1:45 до 6:29</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?01:45" class="tooltip__image">
+                <div class="tooltip__title">Профилактика на канале с 1:45 до 6:29</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="06:30" class="schedule_item__date">06:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Джейми: обед за 15 минут. 9-я и 10-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?06:30" class="tooltip__image">
+                <div class="tooltip__title">Джейми: обед за 15 минут. 9-я и 10-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="07:30" class="schedule_item__date">07:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?07:30" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="07:50" class="schedule_item__date">07:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">По делам несовершеннолетних</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?07:50" class="tooltip__image">
+                <div class="tooltip__title">По делам несовершеннолетних</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:50" class="schedule_item__date">09:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Давай разведёмся!</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:50" class="tooltip__image">
+                <div class="tooltip__title">Давай разведёмся!</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="11:50" class="schedule_item__date">11:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Понять. Простить. 235-я и 236-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?11:50" class="tooltip__image">
+                <div class="tooltip__title">Понять. Простить. 235-я и 236-я серии</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="13:00" class="schedule_item__date">13:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Преступления страсти. Сезон 1. 3-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:00" class="tooltip__image">
+                <div class="tooltip__title">Преступления страсти. Сезон 1. 3-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="14:00" class="schedule_item__date">14:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта-2. 3-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?14:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта-2. 3-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="15:00" class="schedule_item__date">15:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта-2. 4-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта-2. 4-я серия</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="16:00" class="schedule_item__date">16:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Подкидыши. Фильм 6-й - &quot;Принцесса цирка&quot;, 1-я и 2-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?16:00" class="tooltip__image">
+                <div class="tooltip__title">Подкидыши. Фильм 6-й - &quot;Принцесса цирка&quot;, 1-я и 2-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:00" class="schedule_item__date">18:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:00" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="18:05" class="schedule_item__date">18:05</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Она написала убийство. 81-я серия - &quot;Знамение смерти</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:05" class="tooltip__image">
+                <div class="tooltip__title">Она написала убийство. 81-я серия - &quot;Знамение смерти</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="19:00" class="schedule_item__date">19:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта-2. 5-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?19:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта-2. 5-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="20:00" class="schedule_item__date">20:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта-2. 6-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?20:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта-2. 6-я серия</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="21:00" class="schedule_item__date">21:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Подкидыши. Фильм 7-й - &quot;Под знаком близнецов&quot;, 1-я и 2-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:00" class="tooltip__image">
+                <div class="tooltip__title">Подкидыши. Фильм 7-й - &quot;Под знаком близнецов&quot;, 1-я и 2-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="23:00" class="schedule_item__date">23:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Я его убила</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?23:00" class="tooltip__image">
+                <div class="tooltip__title">Я его убила</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="00:00" class="schedule_item__date">00:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:00" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="00:30" class="schedule_item__date">00:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Я шагаю по Москве</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:30" class="tooltip__image">
+                <div class="tooltip__title">Я шагаю по Москве</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="02:00" class="schedule_item__date">02:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Нет запретных тем. 9-я - 11-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:00" class="tooltip__image">
+                <div class="tooltip__title">Нет запретных тем. 9-я - 11-я серии</div>
+              </div>
+            </div>
+          </div>
+          <div id="day4" class="schedule__day">
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:00" class="schedule_item__date">05:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Домашняя кухня</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:00" class="tooltip__image">
+                <div class="tooltip__title">Домашняя кухня</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:30" class="schedule_item__date">05:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Джейми: обед за 15 минут. 9-я и 10-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:30" class="tooltip__image">
+                <div class="tooltip__title">Джейми: обед за 15 минут. 9-я и 10-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="06:30" class="schedule_item__date">06:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Джейми: обед за 15 минут. 11-я и 12-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?06:30" class="tooltip__image">
+                <div class="tooltip__title">Джейми: обед за 15 минут. 11-я и 12-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="07:30" class="schedule_item__date">07:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?07:30" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="07:50" class="schedule_item__date">07:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">По делам несовершеннолетних</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?07:50" class="tooltip__image">
+                <div class="tooltip__title">По делам несовершеннолетних</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:50" class="schedule_item__date">09:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Давай разведёмся!</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:50" class="tooltip__image">
+                <div class="tooltip__title">Давай разведёмся!</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="11:50" class="schedule_item__date">11:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Понять. Простить. 237-я и 238-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?11:50" class="tooltip__image">
+                <div class="tooltip__title">Понять. Простить. 237-я и 238-я серии</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="13:00" class="schedule_item__date">13:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Преступления страсти. Сезон 1. 4-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:00" class="tooltip__image">
+                <div class="tooltip__title">Преступления страсти. Сезон 1. 4-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="14:00" class="schedule_item__date">14:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта-2. 5-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?14:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта-2. 5-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="15:00" class="schedule_item__date">15:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта-2. 6-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта-2. 6-я серия</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="16:00" class="schedule_item__date">16:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Подкидыши. Фильм 7-й - &quot;Под знаком близнецов&quot;, 1-я и 2-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?16:00" class="tooltip__image">
+                <div class="tooltip__title">Подкидыши. Фильм 7-й - &quot;Под знаком близнецов&quot;, 1-я и 2-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:00" class="schedule_item__date">18:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:00" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="18:05" class="schedule_item__date">18:05</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Она написала убийство. 82-я серия - &quot;Проклятие Даанавы</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:05" class="tooltip__image">
+                <div class="tooltip__title">Она написала убийство. 82-я серия - &quot;Проклятие Даанавы</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="19:00" class="schedule_item__date">19:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта-2. 7-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?19:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта-2. 7-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="20:00" class="schedule_item__date">20:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Условия контракта-2. 8-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?20:00" class="tooltip__image">
+                <div class="tooltip__title">Условия контракта-2. 8-я серия</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="21:00" class="schedule_item__date">21:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Подкидыши. Фильм 8-й - &quot;Наследник&quot;, 1-я и 2-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:00" class="tooltip__image">
+                <div class="tooltip__title">Подкидыши. Фильм 8-й - &quot;Наследник&quot;, 1-я и 2-я серии</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="23:00" class="schedule_item__date">23:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Я его убила</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?23:00" class="tooltip__image">
+                <div class="tooltip__title">Я его убила</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="00:00" class="schedule_item__date">00:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:00" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="00:30" class="schedule_item__date">00:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Алый камень</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:30" class="tooltip__image">
+                <div class="tooltip__title">Алый камень</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="02:00" class="schedule_item__date">02:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Нет запретных тем. 12-я - 14-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:00" class="tooltip__image">
+                <div class="tooltip__title">Нет запретных тем. 12-я - 14-я серии</div>
+              </div>
+            </div>
+          </div>
+          <div id="day5" class="schedule__day">
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:00" class="schedule_item__date">05:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Домашняя кухня</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:00" class="tooltip__image">
+                <div class="tooltip__title">Домашняя кухня</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:30" class="schedule_item__date">05:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Джейми: обед за 15 минут. 11-я и 12-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:30" class="tooltip__image">
+                <div class="tooltip__title">Джейми: обед за 15 минут. 11-я и 12-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="06:30" class="schedule_item__date">06:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Джейми: обед за 15 минут. 13-я и 14-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?06:30" class="tooltip__image">
+                <div class="tooltip__title">Джейми: обед за 15 минут. 13-я и 14-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="07:30" class="schedule_item__date">07:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?07:30" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="07:50" class="schedule_item__date">07:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">По делам несовершеннолетних</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?07:50" class="tooltip__image">
+                <div class="tooltip__title">По делам несовершеннолетних</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:50" class="schedule_item__date">09:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Давай разведёмся!</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:50" class="tooltip__image">
+                <div class="tooltip__title">Давай разведёмся!</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="10:50" class="schedule_item__date">10:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Классные мужики. 1-я - 8-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?10:50" class="tooltip__image">
+                <div class="tooltip__title">Классные мужики. 1-я - 8-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:00" class="schedule_item__date">18:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:00" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="18:05" class="schedule_item__date">18:05</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Она написала убийство. Сезон 4. 83-я серия - &quot;Траур среди глициний</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:05" class="tooltip__image">
+                <div class="tooltip__title">Она написала убийство. Сезон 4. 83-я серия - &quot;Траур среди глициний</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="19:00" class="schedule_item__date">19:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Буду верной женой</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?19:00" class="tooltip__image">
+                <div class="tooltip__title">Буду верной женой</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="23:00" class="schedule_item__date">23:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Героини нашего времени</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?23:00" class="tooltip__image">
+                <div class="tooltip__title">Героини нашего времени</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="00:00" class="schedule_item__date">00:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:00" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="00:30" class="schedule_item__date">00:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Муж на час</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:30" class="tooltip__image">
+                <div class="tooltip__title">Муж на час</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="02:25" class="schedule_item__date">02:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Нет запретных тем. 15-я - 17-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:25" class="tooltip__image">
+                <div class="tooltip__title">Нет запретных тем. 15-я - 17-я серии</div>
+              </div>
+            </div>
+          </div>
+          <div id="day6" class="schedule__day">
+            <div data-type="episode" class="schedule_item">
+              <div data-time="02:25" class="schedule_item__date">02:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Нет запретных тем. 15-я - 17-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:25" class="tooltip__image">
+                <div class="tooltip__title">Нет запретных тем. 15-я - 17-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:25" class="schedule_item__date">05:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:25" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:30" class="schedule_item__date">05:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Джейми: обед за 15 минут. 13-я и 14-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:30" class="tooltip__image">
+                <div class="tooltip__title">Джейми: обед за 15 минут. 13-я и 14-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="06:30" class="schedule_item__date">06:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Джейми: обед за 15 минут. 15-я и 16-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?06:30" class="tooltip__image">
+                <div class="tooltip__title">Джейми: обед за 15 минут. 15-я и 16-я серии</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="07:30" class="schedule_item__date">07:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Материнская клятва</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?07:30" class="tooltip__image">
+                <div class="tooltip__title">Материнская клятва</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="10:05" class="schedule_item__date">10:05</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Буду верной женой</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?10:05" class="tooltip__image">
+                <div class="tooltip__title">Буду верной женой</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="14:00" class="schedule_item__date">14:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Любовь Надежды. 1-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?14:00" class="tooltip__image">
+                <div class="tooltip__title">Любовь Надежды. 1-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="15:00" class="schedule_item__date">15:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Любовь Надежды. 2-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:00" class="tooltip__image">
+                <div class="tooltip__title">Любовь Надежды. 2-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="16:00" class="schedule_item__date">16:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Любовь Надежды. 3-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?16:00" class="tooltip__image">
+                <div class="tooltip__title">Любовь Надежды. 3-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="17:00" class="schedule_item__date">17:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Любовь Надежды. 4-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?17:00" class="tooltip__image">
+                <div class="tooltip__title">Любовь Надежды. 4-я серия</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:00" class="schedule_item__date">18:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:00" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="18:05" class="schedule_item__date">18:05</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Она написала убийство. 84-я серия - &quot;Убийство сквозь зеркало</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:05" class="tooltip__image">
+                <div class="tooltip__title">Она написала убийство. 84-я серия - &quot;Убийство сквозь зеркало</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="19:00" class="schedule_item__date">19:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Великолепный век. 13-я и 14-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?19:00" class="tooltip__image">
+                <div class="tooltip__title">Великолепный век. 13-я и 14-я серии</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="23:20" class="schedule_item__date">23:20</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Героини нашего времени</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?23:20" class="tooltip__image">
+                <div class="tooltip__title">Героини нашего времени</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="00:00" class="schedule_item__date">00:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:00" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="00:30" class="schedule_item__date">00:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Не торопи любовь</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:30" class="tooltip__image">
+                <div class="tooltip__title">Не торопи любовь</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="02:35" class="schedule_item__date">02:35</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Нет запретных тем. 18-я - 20-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:35" class="tooltip__image">
+                <div class="tooltip__title">Нет запретных тем. 18-я - 20-я серии</div>
+              </div>
+            </div>
+          </div>
+          <div id="day7" class="schedule__day">
+            <div data-type="episode" class="schedule_item">
+              <div data-time="02:35" class="schedule_item__date">02:35</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Нет запретных тем. 18-я - 20-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:35" class="tooltip__image">
+                <div class="tooltip__title">Нет запретных тем. 18-я - 20-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:30" class="schedule_item__date">05:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Джейми: обед за 15 минут. 15-я и 16-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:30" class="tooltip__image">
+                <div class="tooltip__title">Джейми: обед за 15 минут. 15-я и 16-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="06:30" class="schedule_item__date">06:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Джейми: обед за 15 минут. 17-я и 18-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?06:30" class="tooltip__image">
+                <div class="tooltip__title">Джейми: обед за 15 минут. 17-я и 18-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="07:30" class="schedule_item__date">07:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?07:30" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="07:55" class="schedule_item__date">07:55</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Варвара-краса, длинная коса</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?07:55" class="tooltip__image">
+                <div class="tooltip__title">Варвара-краса, длинная коса</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="09:35" class="schedule_item__date">09:35</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Любовь Надежды. 1-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:35" class="tooltip__image">
+                <div class="tooltip__title">Любовь Надежды. 1-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="10:35" class="schedule_item__date">10:35</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Любовь Надежды. 2-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?10:35" class="tooltip__image">
+                <div class="tooltip__title">Любовь Надежды. 2-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="11:35" class="schedule_item__date">11:35</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Любовь Надежды. 3-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?11:35" class="tooltip__image">
+                <div class="tooltip__title">Любовь Надежды. 3-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="12:35" class="schedule_item__date">12:35</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Любовь Надежды. 4-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?12:35" class="tooltip__image">
+                <div class="tooltip__title">Любовь Надежды. 4-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="13:25" class="schedule_item__date">13:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Великолепный век. 13-я и 14-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:25" class="tooltip__image">
+                <div class="tooltip__title">Великолепный век. 13-я и 14-я серии</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="18:00" class="schedule_item__date">18:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Героини нашего времени</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:00" class="tooltip__image">
+                <div class="tooltip__title">Героини нашего времени</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="19:00" class="schedule_item__date">19:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Великолепный век. 15-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?19:00" class="tooltip__image">
+                <div class="tooltip__title">Великолепный век. 15-я серия</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="21:00" class="schedule_item__date">21:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Великолепный век. 16-я серия</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:00" class="tooltip__image">
+                <div class="tooltip__title">Великолепный век. 16-я серия</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="23:00" class="schedule_item__date">23:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Героини нашего времени</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?23:00" class="tooltip__image">
+                <div class="tooltip__title">Героини нашего времени</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="00:00" class="schedule_item__date">00:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">6 кадров</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:00" class="tooltip__image">
+                <div class="tooltip__title">6 кадров</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="00:30" class="schedule_item__date">00:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Вторая любовь</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:30" class="tooltip__image">
+                <div class="tooltip__title">Вторая любовь</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="02:25" class="schedule_item__date">02:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Нет запретных тем. 1-я - 3-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:25" class="tooltip__image">
+                <div class="tooltip__title">Нет запретных тем. 1-я - 3-я серии</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/script.js"></script>
+  </body>
+</html>

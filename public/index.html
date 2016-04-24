@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>ТВ программа</title>
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <input id="burger" type="checkbox" name="burger">
+    <label for="burger" class="burger__label"></label>
+    <nav id="menu">
+      <header>
+        <h2>Телеканалы</h2>
+        <nav role="navigation"></nav>
+        <ul class="listv">
+          <li class="listv__channel"><a href="index.html"><span class="listv__channel__logo"><span class="listv__channel__logo--1tv"></span><span class="listv__channel--title">Первый</span></span></a></li>
+          <li class="listv__channel"><a href="rentv.html">
+              <div class="listv__channel__logo"><span class="listv__channel__logo--rentv"></span><span class="listv__channel--title">РЕН ТВ</span></div></a></li>
+          <li class="listv__channel"><a href="dom.html"><span class="listv__channel__logo"><span class="listv__channel__logo--domtv"></span><span class="listv__channel--title">Домашний</span></span></a></li>
+          <li class="listv__channel"><a href="match.html"><span class="listv__channel__logo"><span class="listv__channel__logo--match"></span><span class="listv__channel--title">МАТЧ ТВ</span></span></a></li>
+          <li class="listv__channel"><a href="ntv.html"><span class="listv__channel__logo"><span class="listv__channel__logo--ntv"></span><span class="listv__channel--title">НТВ</span></span></a></li>
+        </ul>
+      </header>
+    </nav>
+    <main id="panel">
+      <header>
+        <div class="title">
+          <h2><span>Первый: </span>Телепрограмма<span id="live" class="title_live"> live!</span></h2>
+        </div>
+        <div class="filter__genre">
+          <div class="checkbox checkbox--film">
+            <label class="checkbox__label">
+              <input name="film" value="film" type="checkbox" class="checkbox__input checkbox__input--film"><span class="checkbox__field checkbox__field--blue"></span>
+            </label>
+            <div class="checkbox__inner"><span class="checkbox__text">Фильмы</span></div>
+          </div>
+          <div class="checkbox checkbox--serial">
+            <label class="checkbox__label">
+              <input name="genre" value="serial" type="checkbox" class="checkbox__input checkbox__input--serial"><span class="checkbox__field checkbox__field--red"></span>
+            </label>
+            <div class="checkbox__inner"><span class="checkbox__text">Сериалы</span></div>
+          </div>
+          <div class="checkbox checkbox--sport">
+            <label class="checkbox__label">
+              <input name="genre" value="sport" type="checkbox" class="checkbox__input checkbox__input--sport"><span class="checkbox__field checkbox__field--green"></span>
+            </label>
+            <div class="checkbox__inner"><span class="checkbox__text">Спорт</span></div>
+          </div>
+        </div>
+      </header>
+      <section id="wrapper">
+        <section id="schedule" style="background: #F2A23C;">
+          <input id="weeks_nav1" type="radio" name="tabs" checked="">
+          <label for="weeks_nav1" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">пн</div>
+            <div class="weeks_nav__item__day">18</div>
+          </label>
+          <input id="weeks_nav2" type="radio" name="tabs">
+          <label for="weeks_nav2" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">вт</div>
+            <div class="weeks_nav__item__day">19</div>
+          </label>
+          <input id="weeks_nav3" type="radio" name="tabs">
+          <label for="weeks_nav3" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">ср</div>
+            <div class="weeks_nav__item__day">20</div>
+          </label>
+          <input id="weeks_nav4" type="radio" name="tabs">
+          <label for="weeks_nav4" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">чт</div>
+            <div class="weeks_nav__item__day">21</div>
+          </label>
+          <input id="weeks_nav5" type="radio" name="tabs">
+          <label for="weeks_nav5" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">пт</div>
+            <div class="weeks_nav__item__day">22</div>
+          </label>
+          <input id="weeks_nav6" type="radio" name="tabs">
+          <label for="weeks_nav6" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">сб</div>
+            <div class="weeks_nav__item__day">23</div>
+          </label>
+          <input id="weeks_nav7" type="radio" name="tabs">
+          <label for="weeks_nav7" class="weeks_nav__item">
+            <div class="weeks_nav__item__name">вск</div>
+            <div class="weeks_nav__item__day">24</div>
+          </label>
+          <div id="day1" class="schedule__day">
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:00" class="schedule_item__date">05:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Телеканал &quot;Доброе утро&quot;</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:00" class="tooltip__image">
+                <div class="tooltip__title">Телеканал &quot;Доброе утро&quot;</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:00" class="schedule_item__date">09:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:00" class="tooltip__image">
+                <div class="tooltip__title">Новости</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:20" class="schedule_item__date">09:20</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Контрольная закупка</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:20" class="tooltip__image">
+                <div class="tooltip__title">Контрольная закупка</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:50" class="schedule_item__date">09:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Жить здорово!</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:50" class="tooltip__image">
+                <div class="tooltip__title">Жить здорово!</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="10:55" class="schedule_item__date">10:55</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Модный приговор</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?10:55" class="tooltip__image">
+                <div class="tooltip__title">Модный приговор</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="12:00" class="schedule_item__date">12:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?12:00" class="tooltip__image">
+                <div class="tooltip__title">Новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="12:15" class="schedule_item__date">12:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Пусть говорят</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?12:15" class="tooltip__image">
+                <div class="tooltip__title">Пусть говорят</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="13:25" class="schedule_item__date">13:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Таблетка</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:25" class="tooltip__image">
+                <div class="tooltip__title">Таблетка</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="13:55" class="schedule_item__date">13:55</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:55" class="tooltip__image">
+                <div class="tooltip__title">Время покажет</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="15:00" class="schedule_item__date">15:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:00" class="tooltip__image">
+                <div class="tooltip__title">Новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="15:15" class="schedule_item__date">15:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:15" class="tooltip__image">
+                <div class="tooltip__title">Время покажет</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="16:00" class="schedule_item__date">16:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Мужское / Женское. Коммунальная квартира</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?16:00" class="tooltip__image">
+                <div class="tooltip__title">Мужское / Женское. Коммунальная квартира</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="17:00" class="schedule_item__date">17:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Наедине со всеми. Виталий Сундаков</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?17:00" class="tooltip__image">
+                <div class="tooltip__title">Наедине со всеми. Виталий Сундаков</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:00" class="schedule_item__date">18:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Вечерние новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:00" class="tooltip__image">
+                <div class="tooltip__title">Вечерние новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:45" class="schedule_item__date">18:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Давай поженимся! Подполковник ищет хохотушку</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:45" class="tooltip__image">
+                <div class="tooltip__title">Давай поженимся! Подполковник ищет хохотушку</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="19:50" class="schedule_item__date">19:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">&quot;Пусть говорят&quot; с Андреем Малаховым</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?19:50" class="tooltip__image">
+                <div class="tooltip__title">&quot;Пусть говорят&quot; с Андреем Малаховым</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="21:00" class="schedule_item__date">21:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:00" class="tooltip__image">
+                <div class="tooltip__title">Время</div>
+              </div>
+            </div>
+            <div data-type="serial" class="schedule_item">
+              <div data-time="21:35" class="schedule_item__date">21:35</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Маргарита Назарова. 1-я и 2-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:35" class="tooltip__image">
+                <div class="tooltip__title">Маргарита Назарова. 1-я и 2-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="23:35" class="schedule_item__date">23:35</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Вечерний Ургант. Ирина Салтыкова, ВИА Татьяна</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?23:35" class="tooltip__image">
+                <div class="tooltip__title">Вечерний Ургант. Ирина Салтыкова, ВИА Татьяна</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="00:05" class="schedule_item__date">00:05</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Познер. Гость Сергей Рогов</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:05" class="tooltip__image">
+                <div class="tooltip__title">Познер. Гость Сергей Рогов</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="01:05" class="schedule_item__date">01:05</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Ночные новости</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?01:05" class="tooltip__image">
+                <div class="tooltip__title">Ночные новости</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="01:20" class="schedule_item__date">01:20</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?01:20" class="tooltip__image">
+                <div class="tooltip__title">Время покажет</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="02:10" class="schedule_item__date">02:10</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Наедине со всеми</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:10" class="tooltip__image">
+                <div class="tooltip__title">Наедине со всеми</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="03:00" class="schedule_item__date">03:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?03:00" class="tooltip__image">
+                <div class="tooltip__title">Новости</div>
+              </div>
+            </div>
+            <div data-type="film" class="schedule_item">
+              <div data-time="03:05" class="schedule_item__date">03:05</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Наедине со всеми</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?03:05" class="tooltip__image">
+                <div class="tooltip__title">Наедине со всеми</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="03:15" class="schedule_item__date">03:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Модный приговор</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?03:15" class="tooltip__image">
+                <div class="tooltip__title">Модный приговор</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="04:15" class="schedule_item__date">04:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Контрольная закупка</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?04:15" class="tooltip__image">
+                <div class="tooltip__title">Контрольная закупка</div>
+              </div>
+            </div>
+          </div>
+          <div id="day2" class="schedule__day">
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:00" class="schedule_item__date">05:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Наедине со всеми. Виталий Сундаков</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:00" class="tooltip__image">
+                <div class="tooltip__title">Наедине со всеми. Виталий Сундаков</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="06:00" class="schedule_item__date">06:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Вечерние новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?06:00" class="tooltip__image">
+                <div class="tooltip__title">Вечерние новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:00" class="schedule_item__date">09:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:00" class="tooltip__image">
+                <div class="tooltip__title">Новости</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:20" class="schedule_item__date">09:20</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Контрольная закупка. Фасоль</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:20" class="tooltip__image">
+                <div class="tooltip__title">Контрольная закупка. Фасоль</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:50" class="schedule_item__date">09:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Жить здорово!</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:50" class="tooltip__image">
+                <div class="tooltip__title">Жить здорово!</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="12:15" class="schedule_item__date">12:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Пусть говорят</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?12:15" class="tooltip__image">
+                <div class="tooltip__title">Пусть говорят</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="13:25" class="schedule_item__date">13:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Таблетка</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:25" class="tooltip__image">
+                <div class="tooltip__title">Таблетка</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="13:55" class="schedule_item__date">13:55</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:55" class="tooltip__image">
+                <div class="tooltip__title">Время покажет</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="15:00" class="schedule_item__date">15:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:00" class="tooltip__image">
+                <div class="tooltip__title">Новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="15:15" class="schedule_item__date">15:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:15" class="tooltip__image">
+                <div class="tooltip__title">Время покажет</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="16:00" class="schedule_item__date">16:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Мужское / Женское. Воронежские страсти</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?16:00" class="tooltip__image">
+                <div class="tooltip__title">Мужское / Женское. Воронежские страсти</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="17:00" class="schedule_item__date">17:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Наедине со всеми. Лика Стар</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?17:00" class="tooltip__image">
+                <div class="tooltip__title">Наедине со всеми. Лика Стар</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:00" class="schedule_item__date">18:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Вечерние новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:00" class="tooltip__image">
+                <div class="tooltip__title">Вечерние новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:45" class="schedule_item__date">18:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Давай поженимся! Спортивная и творческая</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:45" class="tooltip__image">
+                <div class="tooltip__title">Давай поженимся! Спортивная и творческая</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="19:50" class="schedule_item__date">19:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">&quot;Пусть говорят&quot; с Андреем Малаховым</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?19:50" class="tooltip__image">
+                <div class="tooltip__title">&quot;Пусть говорят&quot; с Андреем Малаховым</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="21:00" class="schedule_item__date">21:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:00" class="tooltip__image">
+                <div class="tooltip__title">Время</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="21:45" class="schedule_item__date">21:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Маргарита Назарова. 3-я и 4-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:45" class="tooltip__image">
+                <div class="tooltip__title">Маргарита Назарова. 3-я и 4-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="23:50" class="schedule_item__date">23:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Вечерний Ургант. Ляйсан Утяшева, Светлана Бондарчук, Lord of the dance</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?23:50" class="tooltip__image">
+                <div class="tooltip__title">Вечерний Ургант. Ляйсан Утяшева, Светлана Бондарчук, Lord of the dance</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="00:25" class="schedule_item__date">00:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Ночные новости</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:25" class="tooltip__image">
+                <div class="tooltip__title">Ночные новости</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="00:40" class="schedule_item__date">00:40</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Структура момента</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:40" class="tooltip__image">
+                <div class="tooltip__title">Структура момента</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="01:45" class="schedule_item__date">01:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Наедине со всеми. Лика Стар</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?01:45" class="tooltip__image">
+                <div class="tooltip__title">Наедине со всеми. Лика Стар</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="02:40" class="schedule_item__date">02:40</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:40" class="tooltip__image">
+                <div class="tooltip__title">Время покажет</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="03:00" class="schedule_item__date">03:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?03:00" class="tooltip__image">
+                <div class="tooltip__title">Новости</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="03:05" class="schedule_item__date">03:05</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?03:05" class="tooltip__image">
+                <div class="tooltip__title">Время покажет</div>
+              </div>
+            </div>
+          </div>
+          <div id="day3" class="schedule__day">
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:00" class="schedule_item__date">05:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Телеканал &quot;Доброе утро&quot;</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:00" class="tooltip__image">
+                <div class="tooltip__title">Телеканал &quot;Доброе утро&quot;</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:00" class="schedule_item__date">09:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:00" class="tooltip__image">
+                <div class="tooltip__title">Новости</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:20" class="schedule_item__date">09:20</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Контрольная закупка</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:20" class="tooltip__image">
+                <div class="tooltip__title">Контрольная закупка</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:50" class="schedule_item__date">09:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Жить здорово!</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:50" class="tooltip__image">
+                <div class="tooltip__title">Жить здорово!</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="10:55" class="schedule_item__date">10:55</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Модный приговор</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?10:55" class="tooltip__image">
+                <div class="tooltip__title">Модный приговор</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="12:00" class="schedule_item__date">12:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?12:00" class="tooltip__image">
+                <div class="tooltip__title">Новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="12:15" class="schedule_item__date">12:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Пусть говорят</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?12:15" class="tooltip__image">
+                <div class="tooltip__title">Пусть говорят</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="13:25" class="schedule_item__date">13:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Таблетка</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:25" class="tooltip__image">
+                <div class="tooltip__title">Таблетка</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="13:55" class="schedule_item__date">13:55</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:55" class="tooltip__image">
+                <div class="tooltip__title">Время покажет</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="15:00" class="schedule_item__date">15:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:00" class="tooltip__image">
+                <div class="tooltip__title">Новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="15:15" class="schedule_item__date">15:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:15" class="tooltip__image">
+                <div class="tooltip__title">Время покажет</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="16:00" class="schedule_item__date">16:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Мужское / Женское. Недетские танцы</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?16:00" class="tooltip__image">
+                <div class="tooltip__title">Мужское / Женское. Недетские танцы</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="17:00" class="schedule_item__date">17:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Наедине со всеми. Старость? Это не про нас!</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?17:00" class="tooltip__image">
+                <div class="tooltip__title">Наедине со всеми. Старость? Это не про нас!</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:00" class="schedule_item__date">18:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Вечерние новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:00" class="tooltip__image">
+                <div class="tooltip__title">Вечерние новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:45" class="schedule_item__date">18:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Давай поженимся! Любитель животных</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:45" class="tooltip__image">
+                <div class="tooltip__title">Давай поженимся! Любитель животных</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="19:50" class="schedule_item__date">19:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">&quot;Пусть говорят&quot; с Андреем Малаховым</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?19:50" class="tooltip__image">
+                <div class="tooltip__title">&quot;Пусть говорят&quot; с Андреем Малаховым</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="21:00" class="schedule_item__date">21:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:00" class="tooltip__image">
+                <div class="tooltip__title">Время</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="21:45" class="schedule_item__date">21:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Маргарита Назарова. 5-я и 6-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:45" class="tooltip__image">
+                <div class="tooltip__title">Маргарита Назарова. 5-я и 6-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="23:50" class="schedule_item__date">23:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Вечерний Ургант. Пётр Кулешов, Сергей и Владимир Кристовские</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?23:50" class="tooltip__image">
+                <div class="tooltip__title">Вечерний Ургант. Пётр Кулешов, Сергей и Владимир Кристовские</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="00:25" class="schedule_item__date">00:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Ночные новости</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:25" class="tooltip__image">
+                <div class="tooltip__title">Ночные новости</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="00:40" class="schedule_item__date">00:40</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Политика. Тема выпуска – взаимоотношения России и Запада</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:40" class="tooltip__image">
+                <div class="tooltip__title">Политика. Тема выпуска – взаимоотношения России и Запада</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="01:45" class="schedule_item__date">01:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Наедине со всеми. Старость? Это не про нас!</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?01:45" class="tooltip__image">
+                <div class="tooltip__title">Наедине со всеми. Старость? Это не про нас!</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="02:40" class="schedule_item__date">02:40</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет. Тема выпуска – судьба украинской летчицы Надежды Савченко</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:40" class="tooltip__image">
+                <div class="tooltip__title">Время покажет. Тема выпуска – судьба украинской летчицы Надежды Савченко</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="03:00" class="schedule_item__date">03:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?03:00" class="tooltip__image">
+                <div class="tooltip__title">Новости</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="03:05" class="schedule_item__date">03:05</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет. Тема выпуска – европейская политика двойных стандартов</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?03:05" class="tooltip__image">
+                <div class="tooltip__title">Время покажет. Тема выпуска – европейская политика двойных стандартов</div>
+              </div>
+            </div>
+          </div>
+          <div id="day4" class="schedule__day">
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:00" class="schedule_item__date">09:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:00" class="tooltip__image">
+                <div class="tooltip__title">Новости</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:20" class="schedule_item__date">09:20</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Контрольная закупка. Фасоль</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:20" class="tooltip__image">
+                <div class="tooltip__title">Контрольная закупка. Фасоль</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:50" class="schedule_item__date">09:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Жить здорово!</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:50" class="tooltip__image">
+                <div class="tooltip__title">Жить здорово!</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="12:15" class="schedule_item__date">12:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Пусть говорят</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?12:15" class="tooltip__image">
+                <div class="tooltip__title">Пусть говорят</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="13:25" class="schedule_item__date">13:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Таблетка</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:25" class="tooltip__image">
+                <div class="tooltip__title">Таблетка</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="13:55" class="schedule_item__date">13:55</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:55" class="tooltip__image">
+                <div class="tooltip__title">Время покажет</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="15:00" class="schedule_item__date">15:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:00" class="tooltip__image">
+                <div class="tooltip__title">Новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="15:15" class="schedule_item__date">15:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:15" class="tooltip__image">
+                <div class="tooltip__title">Время покажет</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="16:00" class="schedule_item__date">16:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Мужское / Женское. Выжившая</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?16:00" class="tooltip__image">
+                <div class="tooltip__title">Мужское / Женское. Выжившая</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="17:00" class="schedule_item__date">17:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Наедине со всеми. Гость Алиса Фрейндлих</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?17:00" class="tooltip__image">
+                <div class="tooltip__title">Наедине со всеми. Гость Алиса Фрейндлих</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:00" class="schedule_item__date">18:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Вечерние новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:00" class="tooltip__image">
+                <div class="tooltip__title">Вечерние новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:45" class="schedule_item__date">18:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Давай поженимся! Практичный и романтичный</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:45" class="tooltip__image">
+                <div class="tooltip__title">Давай поженимся! Практичный и романтичный</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="19:50" class="schedule_item__date">19:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">&quot;Пусть говорят&quot; с Андреем Малаховым</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?19:50" class="tooltip__image">
+                <div class="tooltip__title">&quot;Пусть говорят&quot; с Андреем Малаховым</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="21:00" class="schedule_item__date">21:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:00" class="tooltip__image">
+                <div class="tooltip__title">Время</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="21:35" class="schedule_item__date">21:35</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Маргарита Назарова. 7-я и 8-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:35" class="tooltip__image">
+                <div class="tooltip__title">Маргарита Назарова. 7-я и 8-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="23:40" class="schedule_item__date">23:40</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Вечерний Ургант. Ольга Погодина, Андрей Чернышов</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?23:40" class="tooltip__image">
+                <div class="tooltip__title">Вечерний Ургант. Ольга Погодина, Андрей Чернышов</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="00:15" class="schedule_item__date">00:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Ночные новости</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:15" class="tooltip__image">
+                <div class="tooltip__title">Ночные новости</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="00:30" class="schedule_item__date">00:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">На ночь глядя. Константин Лавроненко</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:30" class="tooltip__image">
+                <div class="tooltip__title">На ночь глядя. Константин Лавроненко</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="01:25" class="schedule_item__date">01:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?01:25" class="tooltip__image">
+                <div class="tooltip__title">Время покажет</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="02:15" class="schedule_item__date">02:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Наедине со всеми</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:15" class="tooltip__image">
+                <div class="tooltip__title">Наедине со всеми</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="03:00" class="schedule_item__date">03:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?03:00" class="tooltip__image">
+                <div class="tooltip__title">Новости</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="03:05" class="schedule_item__date">03:05</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Наедине со всеми</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?03:05" class="tooltip__image">
+                <div class="tooltip__title">Наедине со всеми</div>
+              </div>
+            </div>
+          </div>
+          <div id="day5" class="schedule__day">
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:00" class="schedule_item__date">05:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Телеканал &quot;Доброе утро&quot;</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:00" class="tooltip__image">
+                <div class="tooltip__title">Телеканал &quot;Доброе утро&quot;</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:00" class="schedule_item__date">09:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:00" class="tooltip__image">
+                <div class="tooltip__title">Новости</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:20" class="schedule_item__date">09:20</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Контрольная закупка</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:20" class="tooltip__image">
+                <div class="tooltip__title">Контрольная закупка</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:50" class="schedule_item__date">09:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Жить здорово!</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:50" class="tooltip__image">
+                <div class="tooltip__title">Жить здорово!</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="10:55" class="schedule_item__date">10:55</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Модный приговор</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?10:55" class="tooltip__image">
+                <div class="tooltip__title">Модный приговор</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="12:00" class="schedule_item__date">12:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?12:00" class="tooltip__image">
+                <div class="tooltip__title">Новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="12:15" class="schedule_item__date">12:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Пусть говорят</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?12:15" class="tooltip__image">
+                <div class="tooltip__title">Пусть говорят</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="13:25" class="schedule_item__date">13:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Таблетка</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:25" class="tooltip__image">
+                <div class="tooltip__title">Таблетка</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="13:55" class="schedule_item__date">13:55</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:55" class="tooltip__image">
+                <div class="tooltip__title">Время покажет</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="15:00" class="schedule_item__date">15:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:00" class="tooltip__image">
+                <div class="tooltip__title">Новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="15:15" class="schedule_item__date">15:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время покажет</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:15" class="tooltip__image">
+                <div class="tooltip__title">Время покажет</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="16:00" class="schedule_item__date">16:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Мужское / Женское. Секреты семейного счастья</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?16:00" class="tooltip__image">
+                <div class="tooltip__title">Мужское / Женское. Секреты семейного счастья</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="17:00" class="schedule_item__date">17:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Жди меня</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?17:00" class="tooltip__image">
+                <div class="tooltip__title">Жди меня</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:00" class="schedule_item__date">18:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Вечерние новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:00" class="tooltip__image">
+                <div class="tooltip__title">Вечерние новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:45" class="schedule_item__date">18:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">&quot;Человек и закон&quot; с Алексеем Пимановым</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:45" class="tooltip__image">
+                <div class="tooltip__title">&quot;Человек и закон&quot; с Алексеем Пимановым</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="19:50" class="schedule_item__date">19:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Поле чудес</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?19:50" class="tooltip__image">
+                <div class="tooltip__title">Поле чудес</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="21:00" class="schedule_item__date">21:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:00" class="tooltip__image">
+                <div class="tooltip__title">Время</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="21:30" class="schedule_item__date">21:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Голос. Дети. Зрители отменят решения наставников</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:30" class="tooltip__image">
+                <div class="tooltip__title">Голос. Дети. Зрители отменят решения наставников</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="23:30" class="schedule_item__date">23:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Вечерний Ургант. Владимир Машков, Данила Козловский</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?23:30" class="tooltip__image">
+                <div class="tooltip__title">Вечерний Ургант. Владимир Машков, Данила Козловский</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="00:30" class="schedule_item__date">00:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Дженис Джоплин: Грустная маленькая девочка</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:30" class="tooltip__image">
+                <div class="tooltip__title">Дженис Джоплин: Грустная маленькая девочка</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="02:25" class="schedule_item__date">02:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Дневник слабака</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:25" class="tooltip__image">
+                <div class="tooltip__title">Дневник слабака</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="04:10" class="schedule_item__date">04:10</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Модный приговор</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?04:10" class="tooltip__image">
+                <div class="tooltip__title">Модный приговор</div>
+              </div>
+            </div>
+          </div>
+          <div id="day6" class="schedule__day">
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:10" class="schedule_item__date">05:10</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Контрольная закупка</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:10" class="tooltip__image">
+                <div class="tooltip__title">Контрольная закупка</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:50" class="schedule_item__date">05:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Расплата. 1-я и 2-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:50" class="tooltip__image">
+                <div class="tooltip__title">Расплата. 1-я и 2-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="06:00" class="schedule_item__date">06:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?06:00" class="tooltip__image">
+                <div class="tooltip__title">Новости</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="06:10" class="schedule_item__date">06:10</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Расплата. 1-я и 2-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?06:10" class="tooltip__image">
+                <div class="tooltip__title">Расплата. 1-я и 2-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="08:00" class="schedule_item__date">08:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Играй, гармонь любимая!</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?08:00" class="tooltip__image">
+                <div class="tooltip__title">Играй, гармонь любимая!</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="08:45" class="schedule_item__date">08:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Смешарики. Новые приключения</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?08:45" class="tooltip__image">
+                <div class="tooltip__title">Смешарики. Новые приключения</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:00" class="schedule_item__date">09:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Умницы и умники. Выпуск от 23 апреля</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:00" class="tooltip__image">
+                <div class="tooltip__title">Умницы и умники. Выпуск от 23 апреля</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="09:45" class="schedule_item__date">09:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Слово пастыря</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?09:45" class="tooltip__image">
+                <div class="tooltip__title">Слово пастыря</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="10:00" class="schedule_item__date">10:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?10:00" class="tooltip__image">
+                <div class="tooltip__title">Новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="10:15" class="schedule_item__date">10:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Смак. Сергей Жигунов</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?10:15" class="tooltip__image">
+                <div class="tooltip__title">Смак. Сергей Жигунов</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="10:55" class="schedule_item__date">10:55</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Леонид Дербенев. &quot;Этот мир придуман не нами...&quot;</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?10:55" class="tooltip__image">
+                <div class="tooltip__title">Леонид Дербенев. &quot;Этот мир придуман не нами...&quot;</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="12:00" class="schedule_item__date">12:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?12:00" class="tooltip__image">
+                <div class="tooltip__title">Новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="12:10" class="schedule_item__date">12:10</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Идеальный ремонт. К юбилею Михаила Державина. Дача на Гавайях</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?12:10" class="tooltip__image">
+                <div class="tooltip__title">Идеальный ремонт. К юбилею Михаила Державина. Дача на Гавайях</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="13:10" class="schedule_item__date">13:10</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">На 10 лет моложе. Выпуск от 23 апреля</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:10" class="tooltip__image">
+                <div class="tooltip__title">На 10 лет моложе. Выпуск от 23 апреля</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="14:00" class="schedule_item__date">14:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Теория заговора. Кетчуп и майонез</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?14:00" class="tooltip__image">
+                <div class="tooltip__title">Теория заговора. Кетчуп и майонез</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="15:00" class="schedule_item__date">15:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Голос. Дети</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:00" class="tooltip__image">
+                <div class="tooltip__title">Голос. Дети</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="17:00" class="schedule_item__date">17:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">&quot;Кто хочет стать миллионером?&quot; с Дмитрием Дибровым</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?17:00" class="tooltip__image">
+                <div class="tooltip__title">&quot;Кто хочет стать миллионером?&quot; с Дмитрием Дибровым</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:00" class="schedule_item__date">18:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Вечерние новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:00" class="tooltip__image">
+                <div class="tooltip__title">Вечерние новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:15" class="schedule_item__date">18:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Угадай мелодию</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:15" class="tooltip__image">
+                <div class="tooltip__title">Угадай мелодию</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:50" class="schedule_item__date">18:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Без страховки. Выпуск от 23 апреля</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:50" class="tooltip__image">
+                <div class="tooltip__title">Без страховки. Выпуск от 23 апреля</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="21:00" class="schedule_item__date">21:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Время</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:00" class="tooltip__image">
+                <div class="tooltip__title">Время</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="21:20" class="schedule_item__date">21:20</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">&quot;Сегодня вечером&quot; с Андреем Малаховым. Наташа Королева</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:20" class="tooltip__image">
+                <div class="tooltip__title">&quot;Сегодня вечером&quot; с Андреем Малаховым. Наташа Королева</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="23:00" class="schedule_item__date">23:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Подмосковные вечера. Выпуск от 23 апреля</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?23:00" class="tooltip__image">
+                <div class="tooltip__title">Подмосковные вечера. Выпуск от 23 апреля</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="23:55" class="schedule_item__date">23:55</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">&quot;Прокофьев наш&quot;. К 125-летию композитора</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?23:55" class="tooltip__image">
+                <div class="tooltip__title">&quot;Прокофьев наш&quot;. К 125-летию композитора</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="01:00" class="schedule_item__date">01:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">127 часов</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?01:00" class="tooltip__image">
+                <div class="tooltip__title">127 часов</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="02:45" class="schedule_item__date">02:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Сайрус</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:45" class="tooltip__image">
+                <div class="tooltip__title">Сайрус</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="04:30" class="schedule_item__date">04:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Модный приговор</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?04:30" class="tooltip__image">
+                <div class="tooltip__title">Модный приговор</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="04:30" class="schedule_item__date">04:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Модный приговор</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?04:30" class="tooltip__image">
+                <div class="tooltip__title">Модный приговор</div>
+              </div>
+            </div>
+          </div>
+          <div id="day7" class="schedule__day">
+            <div data-type="episode" class="schedule_item">
+              <div data-time="05:30" class="schedule_item__date">05:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Контрольная закупка</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?05:30" class="tooltip__image">
+                <div class="tooltip__title">Контрольная закупка</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="06:00" class="schedule_item__date">06:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?06:00" class="tooltip__image">
+                <div class="tooltip__title">Новости</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="06:10" class="schedule_item__date">06:10</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Расплата. 3-я и 4-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?06:10" class="tooltip__image">
+                <div class="tooltip__title">Расплата. 3-я и 4-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="08:10" class="schedule_item__date">08:10</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Армейский магазин. Специальный выпуск программы посвящен весеннему призыву</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?08:10" class="tooltip__image">
+                <div class="tooltip__title">Армейский магазин. Специальный выпуск программы посвящен весеннему призыву</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="08:45" class="schedule_item__date">08:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Смешарики. Пин-код</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?08:45" class="tooltip__image">
+                <div class="tooltip__title">Смешарики. Пин-код</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="08:55" class="schedule_item__date">08:55</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Здоровье</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?08:55" class="tooltip__image">
+                <div class="tooltip__title">Здоровье</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="10:00" class="schedule_item__date">10:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?10:00" class="tooltip__image">
+                <div class="tooltip__title">Новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="10:15" class="schedule_item__date">10:15</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">&quot;Непутевые заметки&quot; с Дмитрием Крыловым. Коста-Рика</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?10:15" class="tooltip__image">
+                <div class="tooltip__title">&quot;Непутевые заметки&quot; с Дмитрием Крыловым. Коста-Рика</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="10:35" class="schedule_item__date">10:35</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Пока все дома. Андрей Караулов</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?10:35" class="tooltip__image">
+                <div class="tooltip__title">Пока все дома. Андрей Караулов</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="11:25" class="schedule_item__date">11:25</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Фазенда. Экзотическая гостиная</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?11:25" class="tooltip__image">
+                <div class="tooltip__title">Фазенда. Экзотическая гостиная</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="12:00" class="schedule_item__date">12:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Новости с субтитрами</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?12:00" class="tooltip__image">
+                <div class="tooltip__title">Новости с субтитрами</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="12:20" class="schedule_item__date">12:20</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Открытие Китая. Улица</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?12:20" class="tooltip__image">
+                <div class="tooltip__title">Открытие Китая. Улица</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="12:50" class="schedule_item__date">12:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Гости по воскресеньям. Татьяна Лютаева</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?12:50" class="tooltip__image">
+                <div class="tooltip__title">Гости по воскресеньям. Татьяна Лютаева</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="13:50" class="schedule_item__date">13:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Трактир на Пятницкой</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?13:50" class="tooltip__image">
+                <div class="tooltip__title">Трактир на Пятницкой</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="15:35" class="schedule_item__date">15:35</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Обнимая небо. 10-я - 12-я серии</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?15:35" class="tooltip__image">
+                <div class="tooltip__title">Обнимая небо. 10-я - 12-я серии</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="18:45" class="schedule_item__date">18:45</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">&quot;Клуб Веселых и Находчивых&quot;. Высшая лига. Третий четвертьфинал</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?18:45" class="tooltip__image">
+                <div class="tooltip__title">&quot;Клуб Веселых и Находчивых&quot;. Высшая лига. Третий четвертьфинал</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="21:00" class="schedule_item__date">21:00</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Воскресное &quot;Время&quot;</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?21:00" class="tooltip__image">
+                <div class="tooltip__title">Воскресное &quot;Время&quot;</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="22:30" class="schedule_item__date">22:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Что? Где? Когда? Пятая игра весенней серии игр</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?22:30" class="tooltip__image">
+                <div class="tooltip__title">Что? Где? Когда? Пятая игра весенней серии игр</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="23:50" class="schedule_item__date">23:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Рост в полный рост</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?23:50" class="tooltip__image">
+                <div class="tooltip__title">Рост в полный рост</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="00:50" class="schedule_item__date">00:50</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Безумное свидание</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?00:50" class="tooltip__image">
+                <div class="tooltip__title">Безумное свидание</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="02:30" class="schedule_item__date">02:30</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Целуя Джессику Стейн</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?02:30" class="tooltip__image">
+                <div class="tooltip__title">Целуя Джессику Стейн</div>
+              </div>
+            </div>
+            <div data-type="episode" class="schedule_item">
+              <div data-time="04:20" class="schedule_item__date">04:20</div>
+              <div class="schedule_item__info">
+                <div class="schedule_item__info__name">Контрольная закупка</div>
+                <div class="schedule_item__info__label">16+</div>
+              </div>
+              <div class="schedule_item__tooltip"><img src="https://placeimg.com/300/150/any?04:20" class="tooltip__image">
+                <div class="tooltip__title">Контрольная закупка</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/script.js"></script>
+  </body>
+</html>
