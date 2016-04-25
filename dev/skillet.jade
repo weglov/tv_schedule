@@ -15,6 +15,7 @@ mixin schedule_item(item)
 //- html
 html(lang='ru')
   include ./include/head.jade
+  link(rel='stylesheet', href='css/all.css')
   body
     input#burger(type='checkbox', name='burger')
     label.burger__label(for='burger')
@@ -34,5 +35,4 @@ html(lang='ru')
               .schedule__day(id="day#{index++}")
                 for item in val
                     +schedule_item(item)
-    link(rel='stylesheet', href='css/all.css')
     script(src="js/script.js")

@@ -3,7 +3,7 @@
 
 **GitHub Pages:** http://weglov.github.io/tvtask/
 
-Ознакомившись с существующими телепрограммами (tv.yandex.ru, tv.mail.ru), я решил создать не как у всех, удобною телепрограмму для просмотра на мобильных устройствах и смарт-тв приложениях. Тут я имею ввиду удобный и компактный дизайн в стиле мобильности. К дизайну своего приложения я решил подойти со стороны удобства на мобильных и смарт-тв девайсах, именно поэтому мое UI выглядит так, а не иначе.
+Ознакомившись с существующими популярными телепрограммами (tv.yandex.ru, tv.mail.ru), я решил создать не как у всех. К дизайну своего приложения я решил подойти со стороны удобства на мобильных и смарт-тв девайсах, именно поэтому мое UI выглядит так, а не иначе.
 
 ![mobile media](http://weglov.github.io/tvtask/mobile.gif)
 
@@ -30,22 +30,22 @@ gulp.task('files', function() {
 
 
 В gulp я использовал плагины:
-browser-sync
-gulp-autoprefixer
-gulp-concat
-gulp-csso
-gulp-data
-gulp-debug
-gulp-eslint
-gulp-ftp
-gulp-if
-gulp-imagemin
-gulp-jade
-gulp-load-plugins
-gulp-newer
-gulp-notify
-gulp-plumber
-gulp-sass
-gulp-size
-gulp-sourcemaps
+
+* browser-sync - для livereload для всего
+* gulp-autoprefixer - автопрефиксы
+* gulp-csso - лучший минимизатор
+* gulp-data - работа с данными
+* gulp-eslint - js linter
+* gulp-imagemin - Сжимаем изображения
+* gulp-jade - Шаблонизатор
+* gulp-load-plugins 
+* gulp-newer - Для оптимизации работы gulp (отказываемся от лишней сборки)
+* gulp-notify - PUSH в систему об ошибках работает вместе с gulp-debug
+* gulp-sass - SASS привык к нему
+* gulp-size - Смотрю что на выходе сколько весит 
+* gulp-sourcemaps - Отладка css
+
 Эти плагины упрощают мне работу каждый день. 
+
+
+1 задача |||       [2 задача](https://github.com/weglov/group-task)      |||    [3 задача](https://github.com/weglov/ya3)
